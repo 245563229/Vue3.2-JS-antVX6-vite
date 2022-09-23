@@ -8,7 +8,7 @@
     <div id="node02"></div>
   </div>
 </template>
-<!-- 平移，放大、缩小 -->
+<!-- 13种内置节点和3种内置边 -->
 <script setup>
 import { onMounted } from "vue";
 import { Graph } from "@antv/x6";
