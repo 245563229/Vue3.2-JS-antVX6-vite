@@ -5,6 +5,8 @@ import antv02Vue from "./components/firstStudy/antv02.vue";
 import antv03Vue from "./components/firstStudy/antv03.vue";
 import antv04Vue from "./components/firstStudy/antv04.vue";
 import antv05Vue from "./components/firstStudy/antv05.vue";
+import antv06Vue from "./components/firstStudy/antv06.vue";
+import antv07Vue from "./components/firstStudy/antv07.vue";
 </script>
 
 <template>
@@ -12,7 +14,9 @@ import antv05Vue from "./components/firstStudy/antv05.vue";
   <!-- <antv02Vue></antv02Vue> -->
   <!-- <antv03Vue></antv03Vue> -->
   <!-- <antv04Vue></antv04Vue> -->
-  <antv05Vue></antv05Vue>
+  <!-- <antv05Vue></antv05Vue> -->
+  <!-- <antv06Vue></antv06Vue> -->
+  <antv07Vue></antv07Vue>
 </template>
 
 <style scoped>
