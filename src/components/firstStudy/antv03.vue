@@ -55,21 +55,35 @@ const data = {
     },
     {
       id: "node3-5",
-      shape: "ellipse",
-      x: 0,
+      shape: "polyline",
+      x: 200,
       y: 150,
       width: 80,
       height: 40,
-      label: "椭圆形",
+      label: "折线",
+      attrs: {
+        body: {
+          fill: "#efdbff",
+          stroke: "#9254de",
+          refPoints: "-1,2 0,5,1,15",
+        },
+      },
     },
     {
       id: "node3-6",
-      shape: "ellipse",
-      x: 0,
+      shape: "path",
+      x: 300,
       y: 150,
       width: 80,
       height: 40,
-      label: "椭圆形",
+      label: "路径",
+      path: "M 0 5 10 0 C 20 0 20 20 10 20 L 0 15 Z",
+      attrs: {
+        body: {
+          fill: "#efdbff",
+          stroke: "#9254de",
+        },
+      },
     },
     {
       id: "node3-7",
