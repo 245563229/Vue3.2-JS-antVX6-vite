@@ -87,30 +87,73 @@ const data = {
     },
     {
       id: "node3-7",
-      shape: "ellipse",
+      shape: "image", //图片
+      //shape:'image-bordered' 带有边框
+      //shape:'image-embedded' 内嵌矩形
+      //shape:'image-inscribed' 内嵌椭圆
       x: 0,
-      y: 150,
+      y: 300,
       width: 80,
       height: 40,
-      label: "椭圆形",
+      // label: "图片",
+      imageUrl: "http://www.w3.org/2000/svg",
     },
     {
       id: "node3-8",
-      shape: "ellipse",
-      x: 0,
-      y: 150,
-      width: 80,
-      height: 40,
-      label: "椭圆形",
+      shape: "text-block",
+      x: 100,
+      y: 300,
+      width: 100,
+      height: 100,
+      text: "文本",
+      attrs: {
+        body: {
+          fill: "#efdbff",
+          stroke: "#fff",
+          rx: 10, //圆角
+          ry: 10,
+        },
+      },
     },
     {
       id: "node3-9",
-      shape: "ellipse",
-      x: 0,
-      y: 150,
+      shape: "cylinder",
+      x: 250,
+      y: 300,
       width: 80,
       height: 40,
-      label: "椭圆形",
+      label: "圆柱",
+      attrs: {
+        top: {
+          fill: "red",
+          stroke: "#fff",
+          // fillOpacity: 0.1,
+        },
+        body: {
+          fill: "green",
+        },
+      },
+    },
+    {
+      id: "node3-10",
+      shape: "html",
+      x: 350,
+      y: 300,
+      width: 80,
+      height: 80,
+      // label: "html",
+      html() {
+        const wrap = document.createElement("div");
+        // wrap.style.width = "100%";
+        // wrap.style.height = "100%";
+        // wrap.style.background = "skyblue";
+        // wrap.style.display = "flex";
+        // wrap.style.justifyContent = "center";
+        // wrap.innerText = "是html";
+        wrap.innerHTML = `<a href='#' class='wrapClass' >html</a>`;
+
+        return wrap;
+      },
     },
   ],
   //定义边的数据
